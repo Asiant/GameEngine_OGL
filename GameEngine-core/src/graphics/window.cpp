@@ -28,6 +28,16 @@ namespace GameEngine {
 			}
 			glfwMakeContextCurrent(m_window);
 			glfwSetWindowSizeCallback(m_window,winResize);
+			//start of glew part
+			//this must be below glfw context created... IMPORTAINT
+			//Remember to set GLEW_STATIC in preprocessor in props
+			std::cout << "OpenGL: "<<glGetString(GL_VERSION) << std::endl;
+			if (glewInit() != GLEW_OK){
+				std::cout << "Could not Initlize glew! :(" << std::endl;
+				return false;
+			}
+			//End of GLEW part
+
 			return true;
 
 		}
