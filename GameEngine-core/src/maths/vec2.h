@@ -16,10 +16,10 @@ namespace GameEngine {
 			vec2& multiply(const vec2& other);
 			vec2& divide(const vec2& other);
 
-			friend vec2 operator+(vec2, vec2&);
-			friend vec2 operator-(vec2, vec2&);
-			friend vec2 operator/(vec2, vec2&);
-			friend vec2 operator*(vec2, vec2&);
+			friend vec2 operator+(vec2, const vec2&);
+			friend vec2 operator-(vec2, const vec2&);
+			friend vec2 operator/(vec2, const vec2&);
+			friend vec2 operator*(vec2, const vec2&);
 
 
 			vec2& operator+=(const vec2& right);

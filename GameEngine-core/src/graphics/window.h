@@ -43,3 +43,13 @@ namespace GameEngine {
 	
 	}
 }
+/*******************************************************
+Tests
+
+if (window.isMouseButtonPressed(GLFW_MOUSE_BUTTON_LEFT)){
+std::cout << "Pressed <"<< std::endl;
+}
+double x, y;
+window.getMousePosition(x, y);
+std::cout << x << ", " << y << std::endl;
+*********************************************************/
