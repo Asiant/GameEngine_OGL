@@ -16,9 +16,9 @@ namespace GameEngine {
 				const char* m_title;
 				GLFWwindow* m_window;
 				bool m_closed;
-				static bool m_keys[MAX_KEYS];
-				static bool m_MouseButtons[MAX_BUTTONS];
-				static double m_x, m_y;
+				bool m_keys[MAX_KEYS];
+				bool m_MouseButtons[MAX_BUTTONS];
+				double mx, my;
 				  
 			public:
 				Window(const char* name, int width, int height);
@@ -30,9 +30,15 @@ namespace GameEngine {
 				inline int getWidth() const { return m_width; }
 				inline int getHeight() const { return m_height; }
 
+
+				bool isKeyPressed(unsigned int keycode) const;
+				bool isMouseButtonPressed(unsigned int button_code) const;
+				void getMousePosition(double &x, double &y) const;
 			private:
 				bool init();
-				
+				friend static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
+				friend static void mouse_button_callback(GLFWwindow* window, int button, int action, int mods);
+				friend static void cursor_position_callback(GLFWwindow* window, double xpos, double ypos);
 		};
 	
 	}

@@ -10,12 +10,17 @@ int main(){
 	while (!window.closed()){
 		//std::cout << "Width: " << window.getWidth() << "Height: " << window.getHeight()<<std::endl;
 		window.clear();
-		glBegin(GL_TRIANGLES);
-		glVertex2f(0.5f, 0.5f);
-		glVertex2f(0.5f, -0.5f);
-		glVertex2f(-0.5f, 0.6f);
-		glEnd();
-
+		//glBegin(GL_TRIANGLES);
+		//glVertex2f(0.5f, 0.5f);
+		//glVertex2f(0.5f, -0.5f);
+		//glVertex2f(-0.5f, 0.6f);
+		//glEnd();
+		if (window.isMouseButtonPressed(GLFW_MOUSE_BUTTON_LEFT)){
+			std::cout << "Pressed <"<< std::endl;
+		}
+		double x, y;
+		window.getMousePosition(x, y);
+		std::cout << x << ", " << y << std::endl;
 		window.update();
 	}
 	//system("PAUSE");
