@@ -20,5 +20,14 @@ std::cout << a4 + b4 << std::endl;
 std::cout << a2 << std::endl;
 std::cout << a3 << std::endl;
 std::cout << a4 << std::endl;=
-***************************************/
+**************************************
+Matrix Test
+
+mat4 M1 = mat4::translation(vec3(2.0f, 6.9f, 1.9f));
+mat4 M2 = mat4::identity();
+mat4 M3 = M2*M1;
+std::cout << M1.columns[3];
+
+
+****************************************/
 
