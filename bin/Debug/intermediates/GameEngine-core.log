@@ -1,10 +1,13 @@
-﻿Build started 12-12-2015 5.52.05 PM.
+﻿Build started 12-12-2015 9.44.03 PM.
      1>Project "C:\Users\Rohan Kumar\Documents\Visual Studio 2013\Projects\GameEngine\GameEngine-core\GameEngine-core.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Rohan Kumar\Documents\Visual Studio 2013\Projects\GameEngine\bin\Debug\intermediates\\" /Fd"C:\Users\Rohan Kumar\Documents\Visual Studio 2013\Projects\GameEngine\bin\Debug\intermediates\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Rohan Kumar\Documents\Visual Studio 2013\Projects\GameEngine\bin\Debug\GameEngine-core.exe" /INCREMENTAL /NOLOGO glfw3.lib glew32s.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Rohan Kumar\Documents\Visual Studio 2013\Projects\GameEngine\bin\Debug\GameEngine-core.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Rohan Kumar\Documents\Visual Studio 2013\Projects\GameEngine\bin\Debug\GameEngine-core.lib" /MACHINE:X86 "C:\Users\Rohan Kumar\Documents\Visual Studio 2013\Projects\GameEngine\bin\Debug\intermediates\main.obj"
+         "C:\Users\Rohan Kumar\Documents\Visual Studio 2013\Projects\GameEngine\bin\Debug\intermediates\buffer.obj"
+         "C:\Users\Rohan Kumar\Documents\Visual Studio 2013\Projects\GameEngine\bin\Debug\intermediates\IndexBuffer.obj"
+         "C:\Users\Rohan Kumar\Documents\Visual Studio 2013\Projects\GameEngine\bin\Debug\intermediates\vertexArray.obj"
          "C:\Users\Rohan Kumar\Documents\Visual Studio 2013\Projects\GameEngine\bin\Debug\intermediates\shader.obj"
          "C:\Users\Rohan Kumar\Documents\Visual Studio 2013\Projects\GameEngine\bin\Debug\intermediates\window.obj"
          "C:\Users\Rohan Kumar\Documents\Visual Studio 2013\Projects\GameEngine\bin\Debug\intermediates\mat4.obj"
@@ -19,4 +22,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.94
+Time Elapsed 00:00:02.93

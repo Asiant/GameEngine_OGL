@@ -9,6 +9,6 @@ uniform mat4 m1_martix = mat4(1.0);
 out vec4 pos;
 void main()
 {
-	gl_Position = pr_martix *vw_martix * m1_martix* position;
+	gl_Position = pr_martix * vw_martix * m1_martix * position;
 	pos = position;
 }
